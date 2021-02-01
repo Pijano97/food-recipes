@@ -1,0 +1,19 @@
+.mealList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mealList__nutritions > h1 {
+	text-align: center;
+}
+
+.mealList__nutritions > ul {
+	display: flex;
+	width: 30px;
+	justify-content: space-evenly;
+}
+
+.mealList__meal {
+	display: flex;
+}
