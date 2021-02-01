@@ -1,0 +1,10 @@
+/* #363949 */
+/* #3C3649 */
+/* #363949 */
+
+.app {
+	height: 100vh;
+	width: 100vw;
+	background: url(./img/bg2.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
