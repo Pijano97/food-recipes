@@ -8,7 +8,6 @@ function MealList({ mealData }) {
 	return (
 		<div className="mealList">
 			<div className="mealList__nutritions">
-				<h1>Macros</h1>
 				<ul>
 					<li>Calories: {nutrients.calories.toFixed(0)}</li>
 					<li>Carbohydrates: {nutrients.carbohydrates.toFixed(0)}</li>

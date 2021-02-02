@@ -17,16 +17,22 @@ function Meal({ meal }) {
 		// catch eror
 	}, [meal.id]);
 
+	function truncate(str, n) {
+		return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+	}
+
 	return (
 		<div className="meal">
-			<h1>{meal.title}</h1>
+			<h1>{truncate(meal.title, 23)}</h1>
 			<img src={imageUrl} alt="recipe" />
-			<ul>
+			<ul className="meal__instructions">
 				<li>Preparation time: {meal.readyInMinutes} minutes</li>
 				<li>Number of servings: {meal.servings}</li>
 			</ul>
 
-			<a href={meal.sourceUrl}>Go to Recipe</a>
+			<a className="meal__link" href={meal.sourceUrl}>
+				Go to Recipe
+			</a>
 		</div>
 	);
 }

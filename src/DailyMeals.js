@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 function DailyMeals() {
 	const [mealData, setMealData] = useState(null);
-	const [calories, setCalories] = useState(2000);
+	const [calories, setCalories] = useState();
 	const [vegetarian, setVegetarian] = useState("");
 	const [showForm, setShowForm] = useState(true);
 

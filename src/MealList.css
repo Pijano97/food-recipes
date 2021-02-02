@@ -4,16 +4,20 @@
 	align-items: center;
 }
 
-.mealList__nutritions > h1 {
-	text-align: center;
+.mealList__nutritions > ul {
+	list-style: none;
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 450px;
 }
 
-.mealList__nutritions > ul {
-	display: flex;
-	width: 30px;
-	justify-content: space-evenly;
+.mealList__nutritions > ul > li {
+	margin: 10px;
 }
 
 .mealList__meal {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
